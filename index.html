@@ -4,20 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand Talk #10: Công Thức Tối Ưu Lợi Nhuận - Nguyễn Đức Thái</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdfcf9;
+            color: #1e293b;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #b89047 0%, #d4af37 50%, #9a7b36 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-glow {
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            box-shadow: 0 4px 30px rgba(154, 123, 54, 0.03);
+        }
+        .quote-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 251, 245, 0.98) 100%);
+            border-left: 4px solid #d4af37;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            border-right: 1px solid rgba(212, 175, 55, 0.1);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            box-shadow: 0 4px 20px -5px rgba(212, 175, 55, 0.08);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fdfcf9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e2dfd5;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #cfcbc0;
+        }
+    </style>
 </head>
-<body class="antialiased min-h-screen selection:bg-amber-100 selection:text-amber-900 relative">
+<body class="antialiased min-h-screen selection:bg-amber-100 selection:text-amber-900">
 
-    <canvas id="bgNetworkCanvas" class="absolute top-0 left-0 w-full pointer-events-none z-0"></canvas>
+    <!-- Top Glow Header -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[400px] bg-gradient-to-b from-amber-50/5 via-yellow-50/2 to-transparent blur-[120px] pointer-events-none rounded-full"></div>
 
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[400px] bg-gradient-to-b from-amber-50/5 via-yellow-50/2 to-transparent blur-[120px] pointer-events-none rounded-full z-0"></div>
-
+    <!-- Navigation Header -->
     <header class="sticky top-0 z-50 glass-panel border-b border-amber-200/40 px-4 py-3">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-3">
-                <div class="bg-amber-500/10 text-amber-700 px-3 py-1.5 rounded-lg border border-amber-500/20 font-black tracking-wider text-xs">
+                <div class="bg-amber-500/10 text-amber-700 p-2 rounded-lg border border-amber-500/20 font-black tracking-wider text-sm">
                     BRAND WALKERS
                 </div>
                 <div class="h-4 w-[1px] bg-amber-200 hidden sm:block"></div>
@@ -33,398 +77,749 @@
         </div>
     </header>
 
-    <main class="relative z-10">
-        <section class="relative pt-12 pb-16 px-4 max-w-7xl mx-auto text-center">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-800 border border-amber-500/20 mb-6">
-                <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                Tài Liệu Tổng Hợp Thực Chiến Tương Tác
-            </span>
-            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-8 text-slate-900 leading-tight">
-                Công Thức Tối Ưu <br class="hidden sm:inline" />
-                <span class="gradient-text">Lợi Nhuận Doanh Nghiệp</span>
-            </h1>
+    <!-- Hero Header Section -->
+    <section class="relative pt-12 pb-16 px-4 max-w-7xl mx-auto text-center">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-800 border border-amber-500/20 mb-6">
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+            Tài Liệu Tổng Hợp Thực Chiến Tương Tác
+        </span>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-8 text-slate-900 leading-tight">
+            Công Thức Tối Ưu <br class="hidden sm:inline" />
+            <span class="gradient-text">Lợi Nhuận Doanh Nghiệp</span>
+        </h1>
 
-            <div class="flex justify-center mb-8">
-                <a href="https://drive.google.com/file/d/1wS85Sj5c1Au_qWuEsNQ1EAfPNNPEJqD4/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-600 hover:bg-amber-700 text-white shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-all active:scale-[0.98] gold-glow">
-                    <svg class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                    TẢI SLIDE KEYNOTE CHI TIẾT (GOOGLE DRIVE)
-                </a>
-            </div>
+        <!-- Prominent Golden Slide Link -->
+        <div class="flex justify-center mb-8">
+            <a href="https://drive.google.com/file/d/1wS85Sj5c1Au_qWuEsNQ1EAfPNNPEJqD4/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-600 hover:bg-amber-700 text-white shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-all active:scale-[0.98] gold-glow">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                TẢI SLIDE KEYNOTE CHI TIẾT (GOOGLE DRIVE)
+            </a>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-12 text-left">
-                <div class="glass-panel p-5 rounded-2xl flex items-start gap-4 hover:border-amber-500/40 transition-all gold-glow">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-yellow-600 flex items-center justify-center text-white font-bold text-lg shrink-0">
-                        NĐT
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-800">Diễn giả: Nguyễn Đức Thái</h3>
-                        <p class="text-xs text-amber-700 font-semibold mb-2">Founder & CEO SAPP Education | ACCA & CFA</p>
-                        <p class="text-xs text-slate-600 leading-relaxed">
-                            Cựu Kiểm toán viên EY. Có 15 năm kinh nghiệm tư vấn quản trị tài chính, rủi ro và cải tiến vận hành cho Vingroup, Honda Vietnam... Dẫn dắt SAPP từ 6 người lên 300+ nhân sự.
-                        </p>
-                    </div>
+        <!-- Speaker & Mod Profiles Mini Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-12 text-left">
+            <div class="glass-panel p-5 rounded-2xl flex items-start gap-4 hover:border-amber-500/40 transition-all gold-glow">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-yellow-600 flex items-center justify-center text-white font-bold text-lg shrink-0">
+                    NĐT
                 </div>
-                <div class="glass-panel p-5 rounded-2xl flex items-start gap-4 hover:border-amber-500/40 transition-all gold-glow">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-500 to-amber-700 flex items-center justify-center text-white font-bold text-lg shrink-0">
-                        KL
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-800">Moderator: Khánh Linh</h3>
-                        <p class="text-xs text-amber-700 font-semibold mb-2">Phó TGĐ Hệ thống Y tế Mescells</p>
-                        <p class="text-xs text-slate-600 leading-relaxed">
-                            Trưởng ban Tài chính Brand Walkers. Người có năng lực lõi sâu sắc về quản trị vận hành, điều hành các hệ thống y tế và chuyển giao doanh nghiệp dựa vào dữ liệu.
-                        </p>
-                    </div>
+                <div>
+                    <h3 class="font-bold text-slate-800">Diễn giả: Nguyễn Đức Thái</h3>
+                    <p class="text-xs text-amber-700 font-semibold mb-2">Founder & CEO SAPP Education | ACCA & CFA</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Cựu Kiểm toán viên EY. Có 15 năm kinh nghiệm tư vấn quản trị tài chính, rủi ro và cải tiến vận hành cho Vingroup, Honda Vietnam... Dẫn dắt SAPP từ 6 người lên 300+ nhân sự.
+                    </p>
                 </div>
             </div>
-        </section>
+            <div class="glass-panel p-5 rounded-2xl flex items-start gap-4 hover:border-amber-500/40 transition-all gold-glow">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-500 to-amber-700 flex items-center justify-center text-white font-bold text-lg shrink-0">
+                    KL
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-800">Moderator: Khánh Linh</h3>
+                    <p class="text-xs text-amber-700 font-semibold mb-2">Phó TGĐ Hệ thống Y tế Mescells</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Trưởng ban Tài chính Brand Walkers. Người có năng lực lõi sâu sắc về quản trị vận hành, điều hành các hệ thống y tế và chuyển giao doanh nghiệp dựa vào dữ liệu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="vimo" class="py-16 px-4 max-w-7xl mx-auto scroll-mt-20">
+    <!-- Section: Bối cảnh vĩ mô 2026 -->
+    <section id="vimo" class="py-16 px-4 max-w-7xl mx-auto scroll-mt-20">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight">Bối cảnh vĩ mô 2026</h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-2">Vì sao các chủ doanh nghiệp SME luôn cảm thấy khó thở về mặt dòng tiền?</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Nhát dao 1 -->
+            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/30 transition-all gold-glow">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition-all"></div>
+                <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-700 font-bold mb-4">
+                    01
+                </div>
+                <h3 class="font-bold text-lg text-slate-800 mb-2">Cạnh tranh & Chi phí vốn</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Dòng tiền lưu thông xã hội cực ít do ngân hàng giải ngân chậm. Người có tiền thắt chặt chi tiêu, ép giá bán giảm sâu. Do nghệ phụ thuộc nợ vay phải gánh chi phí lãi suất tăng vọt, ăn mòn dòng tiền duy trì.
+                </p>
+            </div>
+            <!-- Nhát dao 2 -->
+            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/30 transition-all gold-glow">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition-all"></div>
+                <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-700 font-bold mb-4">
+                    02
+                </div>
+                <h3 class="font-bold text-lg text-slate-800 mb-2">Bùng phát Chi phí tuân thủ</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    VAT và thuế doanh nghiệp thắt chặt triệt tiêu hoàn toàn khả năng lách luật. Khai thuế minh bạch đồng nghĩa với việc đóng BHXH đầy đủ cho nhân sự, đội chi phí kế toán vận hành nội bộ lên cao. Thặng dư thật biến mất.
+                </p>
+            </div>
+            <!-- Nhát dao 3 -->
+            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/30 transition-all gold-glow">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition-all"></div>
+                <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-700 font-bold mb-4">
+                    03
+                </div>
+                <h3 class="font-bold text-lg text-slate-800 mb-2">Tái cấu trúc sai lầm do AI</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Đối thủ chuyển đổi số tinh gọn để ép giá bán sản phẩm xuống đáy. Doanh nghiệp chậm chuyển đổi, hoặc chuyển đổi nửa vời (mua tài khoản AI cho nhân sự nhưng không thể tinh giản bộ máy) sẽ chịu áp lực chi phí kép cực lớn.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Mô hình trưởng thành 5 giai đoạn (Interactive switcher) -->
+    <section id="stages" class="py-16 px-4 bg-amber-50/20 border-y border-amber-100 scroll-mt-20">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight">Bối cảnh vĩ mô 2026</h2>
-                <p class="text-xs sm:text-sm text-slate-500 mt-2">Vì sao các chủ doanh nghiệp SME luôn cảm thấy khó thở về mặt dòng tiền?</p>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight">Mô Hình Trưởng Thành 5 Giai Đoạn</h2>
+                <p class="text-xs sm:text-sm text-slate-500 mt-2">Bấm vào từng giai đoạn dưới đây để xem chẩn đoán nỗi đau, giải pháp tài chính & công nghệ tương ứng</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/30 transition-all gold-glow">
-                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-700 font-bold mb-4">01</div>
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Cạnh tranh & Chi phí vốn</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Dòng tiền lưu thông xã hội cực ít do ngân hàng giải ngân chậm. Người có tiền thắt chặt chi tiêu, ép giá bán giảm sâu. Doanh nghiệp phụ thuộc nợ vay phải gánh chi phí lãi suất tăng vọt, ăn mòn dòng tiền duy trì.
-                    </p>
-                </div>
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/30 transition-all gold-glow">
-                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-700 font-bold mb-4">02</div>
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Bùng phát Chi phí tuân thủ</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        VAT và thuế doanh nghiệp thắt chặt triệt tiêu hoàn toàn khả năng lách luật. Khai thuế minh bạch đồng nghĩa với việc đóng BHXH đầy đủ cho nhân sự, đội chi phí kế toán vận hành nội bộ lên cao. Thặng dư thật biến mất.
-                    </p>
-                </div>
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/30 transition-all gold-glow">
-                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-700 font-bold mb-4">03</div>
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Tái cấu trúc sai lầm do AI</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Đối thủ chuyển đổi số tinh gọn để ép giá bán sản phẩm xuống đáy. Doanh nghiệp chậm chuyển đổi, hoặc chuyển đổi nửa vời (mua tài khoản AI cho nhân sự nhưng không thể tinh giản bộ máy) sẽ chịu áp lực chi phí kép cực lớn.
-                    </p>
-                </div>
+            <!-- Tabs selector -->
+            <div class="grid grid-cols-5 gap-2 max-w-4xl mx-auto mb-8 bg-stone-100 p-1.5 rounded-xl border border-amber-200/40">
+                <button onclick="switchStage(1)" id="btn-stage-1" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none bg-amber-500/10 text-amber-800 border border-amber-500/25">
+                    <span class="block sm:inline">Stage 1</span>
+                    <span class="hidden md:block text-[10px] opacity-80 font-semibold">Foundation</span>
+                </button>
+                <button onclick="switchStage(2)" id="btn-stage-2" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none text-slate-600 hover:text-slate-900">
+                    <span class="block sm:inline">Stage 2</span>
+                    <span class="hidden md:block text-[10px] opacity-80 font-semibold">Build</span>
+                </button>
+                <button onclick="switchStage(3)" id="btn-stage-3" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none text-slate-600 hover:text-slate-900">
+                    <span class="block sm:inline">Stage 3</span>
+                    <span class="hidden md:block text-[10px] opacity-80 font-semibold">Growth</span>
+                </button>
+                <button onclick="switchStage(4)" id="btn-stage-4" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none text-slate-600 hover:text-slate-900">
+                    <span class="block sm:inline">Stage 4</span>
+                    <span class="hidden md:block text-[10px] opacity-80 font-semibold">Scale</span>
+                </button>
+                <button onclick="switchStage(5)" id="btn-stage-5" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none text-slate-600 hover:text-slate-900">
+                    <span class="block sm:inline">Stage 5</span>
+                    <span class="hidden md:block text-[10px] opacity-80 font-semibold">Globalize</span>
+                </button>
             </div>
-        </section>
 
-        <section id="stages" class="py-16 px-4 bg-amber-50/20 border-y border-amber-100 scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight">Mô Hình Trưởng Thành 5 Giai Đoạn</h2>
-                    <p class="text-xs sm:text-sm text-slate-500 mt-2">Bấm vào từng giai đoạn dưới đây để xem chẩn đoán nỗi đau, giải pháp tài chính & công nghệ tương ứng</p>
-                </div>
+            <!-- Tab Content Panel -->
+            <div id="stage-content-box" class="glass-panel max-w-5xl mx-auto rounded-3xl p-6 sm:p-8 transition-all">
+                <!-- Content will be generated by JS -->
+            </div>
+        </div>
+    </section>
 
-                <div class="grid grid-cols-5 gap-2 max-w-4xl mx-auto mb-8 bg-stone-100 p-1.5 rounded-xl border border-amber-200/40">
-                    <button onclick="switchStage(1)" id="btn-stage-1" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none">
-                        <span class="block sm:inline">Stage 1</span>
-                        <span class="hidden md:block text-[10px] opacity-80 font-semibold">Foundation</span>
-                    </button>
-                    <button onclick="switchStage(2)" id="btn-stage-2" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none">
-                        <span class="block sm:inline">Stage 2</span>
-                        <span class="hidden md:block text-[10px] opacity-80 font-semibold">Build</span>
-                    </button>
-                    <button onclick="switchStage(3)" id="btn-stage-3" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none">
-                        <span class="block sm:inline">Stage 3</span>
-                        <span class="hidden md:block text-[10px] opacity-80 font-semibold">Growth</span>
-                    </button>
-                    <button onclick="switchStage(4)" id="btn-stage-4" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none">
-                        <span class="block sm:inline">Stage 4</span>
-                        <span class="hidden md:block text-[10px] opacity-80 font-semibold">Scale</span>
-                    </button>
-                    <button onclick="switchStage(5)" id="btn-stage-5" class="stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none">
-                        <span class="block sm:inline">Stage 5</span>
-                        <span class="hidden md:block text-[10px] opacity-80 font-semibold">Globalize</span>
-                    </button>
-                </div>
+    <!-- Section: Cases học tập thực tế -->
+    <section id="cases" class="py-16 px-4 max-w-7xl mx-auto scroll-mt-20">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight">Cases Học Tập Vận Hành & Tài Chính Thực Tế</h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-2">Bóc tách các ví dụ thực chiến đỉnh cao được chia sẻ trực tiếp từ diễn giả</p>
+        </div>
 
-                <div id="stage-content-box" class="glass-panel max-w-5xl mx-auto rounded-3xl p-6 sm:p-8 transition-all min-h-[300px]">
+        <!-- Tab cases selector -->
+        <div class="flex justify-center gap-2 mb-10 max-w-md mx-auto">
+            <button onclick="switchCaseTab(1)" id="btn-case-1" class="case-tab px-4 py-2 text-xs font-bold rounded-lg border border-amber-500/20 bg-amber-500/10 text-amber-800 transition-all">
+                Tổ chức "AI-First"
+            </button>
+            <button onclick="switchCaseTab(2)" id="btn-case-2" class="case-tab px-4 py-2 text-xs font-bold rounded-lg border border-transparent text-slate-500 hover:text-amber-800 transition-all">
+                Định giá 5 Tầng
+            </button>
+            <button onclick="switchCaseTab(3)" id="btn-case-3" class="case-tab px-4 py-2 text-xs font-bold rounded-lg border border-transparent text-slate-500 hover:text-amber-800 transition-all">
+                Định mức Hiện trường
+            </button>
+        </div>
+
+        <!-- Case 1 Container -->
+        <div id="case-panel-1" class="case-panel block">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Architecture visualization -->
+                <div class="lg:col-span-7 glass-panel rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4 border-b border-amber-100 pb-3">
+                        <span class="font-bold text-slate-800 text-sm">Sơ Đồ Luồng Vận Hành SAPP "AI-First"</span>
+                        <span class="text-[10px] text-amber-800 bg-amber-500/10 px-2 py-0.5 rounded-full font-semibold">Tự Động Hóa 50%</span>
                     </div>
-            </div>
-        </section>
-
-        <section id="cases" class="py-16 px-4 max-w-7xl mx-auto scroll-mt-20">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight">Cases Học Tập Vận Hành & Tài Chỉ thực Tế</h2>
-                <p class="text-xs sm:text-sm text-slate-500 mt-2">Bóc tách các ví dụ thực chiến định lượng mẫu từ diễn giả</p>
-            </div>
-
-            <div class="flex justify-center gap-2 mb-10 max-w-md mx-auto">
-                <button onclick="switchCaseTab(1)" id="btn-case-1" class="case-tab px-4 py-2 text-xs font-bold rounded-lg transition-all">Tổ chức "AI-First"</button>
-                <button onclick="switchCaseTab(2)" id="btn-case-2" class="case-tab px-4 py-2 text-xs font-bold rounded-lg transition-all">Định giá 5 Tầng</button>
-                <button onclick="switchCaseTab(3)" id="btn-case-3" class="case-tab px-4 py-2 text-xs font-bold rounded-lg transition-all">Định mức Hiện trường</button>
-            </div>
-
-            <div id="case-panel-1" class="case-panel block">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    <div class="lg:col-span-7 glass-panel rounded-2xl p-6">
-                        <div class="flex items-center justify-between mb-4 border-b border-amber-100 pb-3">
-                            <span class="font-bold text-slate-800 text-sm">Sơ Đồ Luồng Vận Hành SAPP "AI-First"</span>
-                            <span class="text-[10px] text-amber-800 bg-amber-500/10 px-2 py-0.5 rounded-full font-semibold">Tự Động Hóa 50%</span>
+                    <!-- Architecture diagram with CSS/SVG -->
+                    <div class="space-y-4">
+                        <div class="p-3 bg-amber-50 border border-amber-200/50 rounded-xl text-center">
+                            <span class="block text-xs font-bold text-amber-800">GROUP LAYER (BOD)</span>
+                            <span class="text-[9px] text-slate-500">Quản trị tối cao & Phê duyệt chiến lược dòng tiền</span>
                         </div>
-                        <div class="space-y-4">
-                            <div class="p-3 bg-amber-5 border border-amber-200/50 rounded-xl text-center">
-                                <span class="block text-xs font-bold text-amber-800">GROUP LAYER (BOD)</span>
+                        <div class="flex justify-center"><span class="text-amber-400 text-sm">↓</span></div>
+                        <div class="p-3 bg-stone-100/80 border border-amber-200/30 rounded-xl text-center">
+                            <span class="block text-xs font-bold text-slate-700">CORPORATE LAYER (5 Khối Quản Trị)</span>
+                            <span class="text-[9px] text-slate-500 font-medium">Finance & Investment · People & Culture · R&D · Growth (MKT/Sales) · AI & Digital</span>
+                        </div>
+                        <div class="flex justify-center"><span class="text-amber-400 text-sm">↓</span></div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-3 bg-amber-500/5 border border-amber-500/20 rounded-xl text-center">
+                                <span class="block text-xs font-bold text-amber-800">BUSINESS LAYER (6 BUs)</span>
+                                <span class="text-[9px] text-slate-500">Vận hành kinh doanh cốt lõi & P&L Owner</span>
                             </div>
-                            <div class="flex justify-center"><span class="text-amber-400 text-sm">↓</span></div>
-                            <div class="p-3 bg-stone-100/80 border border-amber-200/30 rounded-xl text-center">
-                                <span class="block text-xs font-bold text-slate-700">CORPORATE LAYER (5 Khối Quản Trị)</span>
-                            </div>
-                            <div class="flex justify-center"><span class="text-amber-400 text-sm">↓</span></div>
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="p-3 bg-amber-500/5 border border-amber-500/20 rounded-xl text-center">
-                                    <span class="block text-xs font-bold text-amber-800">BUSINESS LAYER (6 BUs)</span>
-                                </div>
-                                <div class="p-3 bg-amber-100/50 border border-amber-200 rounded-xl text-center">
-                                    <span class="block text-xs font-bold text-amber-900">AI-FIRST LAYER (Bổ trợ)</span>
-                                </div>
+                            <div class="p-3 bg-amber-100/50 border border-amber-200 rounded-xl text-center">
+                                <span class="block text-xs font-bold text-amber-900">AI-FIRST LAYER (Bổ trợ)</span>
+                                <span class="text-[9px] text-slate-500">AI Agents · AI Collaborators · AI Workflow Managers</span>
                             </div>
                         </div>
-                        <div class="mt-6 pt-5 border-t border-amber-100">
-                            <h4 class="font-bold text-xs text-amber-800 mb-3 uppercase tracking-wider">Mô phỏng hiệu quả tài chính "AI-First"</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div class="space-y-3">
-                                    <div>
-                                        <label class="block text-[10px] text-slate-505 mb-1">Số lượng nhân sự hiện tại</label>
-                                        <input type="number" id="sim-staff" value="100" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-amber-500" oninput="runAISimulator()">
+                    </div>
+
+                    <!-- P&L Comparison Sandbox -->
+                    <div class="mt-6 pt-5 border-t border-amber-100">
+                        <h4 class="font-bold text-xs text-amber-800 mb-3 uppercase tracking-wider">Mô phỏng hiệu quả tài chính "AI-First" của chính bạn</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="space-y-3">
+                                <div>
+                                    <label class="block text-[10px] text-slate-505 mb-1">Số lượng nhân sự hiện tại</label>
+                                    <input type="number" id="sim-staff" value="100" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-amber-500" oninput="runAISimulator()">
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] text-slate-505 mb-1">Lương trung bình / tháng (VND)</label>
+                                    <input type="number" id="sim-salary" value="15000000" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-amber-500" oninput="runAISimulator()">
+                                </div>
+                            </div>
+                            <div class="bg-amber-50/50 border border-amber-100 rounded-xl p-4 flex flex-col justify-between">
+                                <div class="space-y-1.5">
+                                    <div class="flex justify-between text-[11px] text-slate-600">
+                                        <span>Số nhân sự được cắt giảm (50%):</span>
+                                        <span id="sim-staff-saved" class="font-bold text-amber-700">50 người</span>
                                     </div>
-                                    <div>
-                                        <label class="block text-[10px] text-slate-505 mb-1">Lương trung bình / tháng (VND)</label>
-                                        <input type="number" id="sim-salary" value="15000000" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-amber-500" oninput="runAISimulator()">
+                                    <div class="flex justify-between text-[11px] text-slate-600">
+                                        <span>Quỹ lương tiết kiệm / năm:</span>
+                                        <span id="sim-money-saved" class="font-bold text-amber-700">9 tỷđ</span>
+                                    </div>
+                                    <div class="flex justify-between text-[11px] text-slate-600">
+                                        <span>Ngân sách hạ tầng AI / năm:</span>
+                                        <span id="sim-ai-cost" class="font-bold text-yellow-600">2.4 tỷđ</span>
                                     </div>
                                 </div>
-                                <div class="bg-amber-50/50 border border-amber-100 rounded-xl p-4 flex flex-col justify-between">
-                                    <div class="space-y-1.5 text-xs text-slate-600">
-                                        <div class="flex justify-between"><span>Cắt giảm (50%):</span><span id="sim-staff-saved" class="font-bold text-amber-700">--</span></div>
-                                        <div class="flex justify-between"><span>Tiết kiệm lương/năm:</span><span id="sim-money-saved" class="font-bold text-amber-700">--</span></div>
-                                        <div class="flex justify-between"><span>Hạ tầng AI/năm:</span><span id="sim-ai-cost" class="font-bold text-yellow-600">--</span></div>
-                                    </div>
-                                    <div class="border-t border-amber-200/50 pt-2 mt-2 flex justify-between text-xs font-bold text-slate-800">
-                                        <span>LN ròng tăng thêm:</span><span id="sim-net-profit" class="text-amber-700">--</span>
-                                    </div>
+                                <div class="border-t border-amber-200/50 pt-2 mt-2 flex justify-between text-xs font-bold text-slate-800">
+                                    <span>Lợi nhuận gộp ròng tăng thêm:</span>
+                                    <span id="sim-net-profit" class="text-amber-700">+6.6 tỷ VND</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:col-span-5 space-y-6">
-                        <h3 class="text-xl font-extrabold text-slate-800">Tái cấu trúc tổ chức "AI-First"</h3>
+                </div>
+
+                <!-- Case 1 Text detail -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Case Study 1</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-800 mt-1 mb-3">Tái cấu trúc tổ chức "AI-First" (SAPP)</h3>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                            Cơ cấu bẻ nhỏ Mega-process sang Sub-process nhằm tự động hoá tác vụ thừa, giảm 50% quy mô nhân sự cồng kềnh mà vẫn giữ đà tăng trưởng cao.
-                        </p>
-                        <div class="p-4 bg-amber-500/5 border border-amber-500/10 rounded-xl text-xs text-slate-700">
-                            <strong>Đo lường bằng P&L:</strong> Mọi khâu số hóa bắt buộc phải chứng minh sự đóng góp trực tiếp bằng việc tối ưu chi phí lương và tăng doanh thu trên đầu người một cách cơ học.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="case-panel-2" class="case-panel hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    <div class="lg:col-span-7 glass-panel rounded-2xl p-6">
-                        <div class="flex items-center justify-between mb-4 border-b border-amber-100 pb-3">
-                            <span class="font-bold text-slate-800 text-sm">Bản Đồ Chiết Khấu 5 Tầng Giá Sàn</span>
-                        </div>
-                        <div class="space-y-2 text-xs text-slate-700 shadow-sm rounded-xl overflow-hidden bg-white">
-                            <div class="flex justify-between p-2 bg-amber-500/10 border-b border-amber-200"><span>Tầng 5 (Hàng mới - Giảm 0%)</span><span id="price-t5" class="font-bold">--</span></div>
-                            <div class="flex justify-between p-2 border-b border-stone-100"><span>Tầng 4 (Flash Sale - Giảm Max 15%)</span><span id="price-t4" class="font-bold text-amber-800">--</span></div>
-                            <div class="flex justify-between p-2 border-b border-stone-100"><span>Tầng 3 (Tồn kho nhẹ - Giảm Max 30%)</span><span id="price-t3" class="font-bold text-yellow-600">--</span></div>
-                            <div class="flex justify-between p-2 border-b border-stone-100"><span>Tầng 2 (Xả thu hồi vốn - Giảm Max 40%)</span><span id="price-t2" class="font-bold text-amber-900">--</span></div>
-                            <div class="flex justify-between p-2 bg-stone-50"><span>Tầng 1 (Thanh lý kho - Cắt lỗ 50%)</span><span id="price-t1" class="font-bold text-amber-950">--</span></div>
-                        </div>
-                        <div class="mt-4">
-                            <label class="block text-[10px] text-slate-505 mb-1 font-bold">Giá bán gốc sản phẩm điểm mẫu (VND)</label>
-                            <input type="number" id="base-price" value="500000" class="w-full max-w-xs bg-white border border-amber-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-amber-500" oninput="runPricingCalculator()">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-5 space-y-4">
-                        <h3 class="text-xl font-extrabold text-slate-800">Định Giá 5 Tầng Khoa Học</h3>
-                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                            Bản đồ thiết lập kỷ luật chiết khấu rõ ràng để chống lại tình trạng tự hủy biên lợi nhuận gộp. Giảm giá phải đi kèm mục tiêu vòng đời lưu động và niên độ của hàng tồn kho.
+                            Diễn giải cách SAPP thực hiện chuyển dịch triệt để cấu trúc tổ chức từ 300 người xuống 150 người mà vẫn giữ vững đà tăng trưởng 30% - 40%.
                         </p>
                     </div>
-                </div>
-            </div>
 
-            <div id="case-panel-3" class="case-panel hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    <div class="lg:col-span-7 glass-panel rounded-2xl p-6 space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                            <div class="border border-amber-200/50 bg-amber-500/5 p-4 rounded-xl">
-                                <span class="block font-bold text-amber-800 mb-1">SAI QUY CÁCH (LỖI HIỆN TRƯỜNG)</span>
-                                <p>Quấn màng co 4 vòng/pallet do thói quen, xếp lỏng lẻo chỉ được 80 sản phẩm. Chi phí phình lên 500.000đ/pallet.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-700 shrink-0 text-xs font-bold">✔</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800 uppercase">Phân rã việc (Quy trình Lego)</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                    Bẻ nhỏ Mega-process thành các Sub-process lặp đi lặp lại (viết bài, SEO, scoring leads, QA tự động). Nhúng AI Agents tự động hóa các quy trình lặp và giữ Con người ở những điểm chạm cảm xúc (deal lớn, CSKH phức tạp).
+                                </p>
                             </div>
-                            <div class="border border-amber-600/30 bg-amber-50 p-4 rounded-xl">
-                                <span class="block font-bold text-amber-900 mb-1">ĐÚNG QUY CÁCH (ĐỊNH MỨC)</span>
-                                <p>Tuân thủ nghiêm ngặt quấn 3 vòng/pallet, sắp xếp khoa học chứa 100 sản phẩm. Chi phí hạ về 300.000đ/pallet (Tiết kiệm 40%).</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-700 shrink-0 text-xs font-bold">✔</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800 uppercase">Đo lường bằng P&L</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                    Bắt buộc nhân sự chứng minh AI đóng góp trực tiếp trên P&L chứ không chỉ giúp "nhân sự nhàn hơn". Doanh thu tăng từ 200 tỷ lên 265 tỷ (Y3) trong khi quỹ lương giảm 50% (từ 62 tỷ xuống 31 tỷ), FCF chuyển dương từ âm thành ++16 tỷ VND.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:col-span-5 space-y-3">
-                        <h3 class="text-xl font-extrabold text-slate-800">Định Mức Vận Hành Hiện Trường</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 2 Container -->
+        <div id="case-panel-2" class="case-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Tier table visualization -->
+                <div class="lg:col-span-7 glass-panel rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4 border-b border-amber-100 pb-3">
+                        <span class="font-bold text-slate-800 text-sm">Bản Đồ 5 Tầng Giá Sàn & Độc Quyền</span>
+                        <span class="text-[10px] text-amber-800 bg-amber-500/10 px-2 py-0.5 rounded-full font-semibold">Bảo Vệ Biên Lợi Nhuận</span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <!-- T5 -->
+                        <div class="flex items-center gap-4 p-3 bg-amber-500/10 border border-amber-500/20 rounded-xl">
+                            <div class="w-12 text-center shrink-0">
+                                <span class="block text-xs font-bold text-amber-800">TẦNG 5</span>
+                                <span class="text-[9px] text-amber-700">Mức giảm: 0%</span>
+                            </div>
+                            <div class="h-8 w-[1px] bg-amber-500/20"></div>
+                            <div class="flex-1">
+                                <h4 class="text-xs font-bold text-slate-800">Hàng mới nhập (<30 ngày), sản phẩm đang bán tốt</h4>
+                                <p class="text-[10px] text-slate-600">Giữ nguyên giá gốc. Không bao giờ khuyến mãi hàng mới để bảo vệ biên gộp chủ lực.</p>
+                            </div>
+                        </div>
+                        <!-- T4 -->
+                        <div class="flex items-center gap-4 p-3 bg-amber-5/55 border border-amber-200/50 rounded-xl">
+                            <div class="w-12 text-center shrink-0">
+                                <span class="block text-xs font-bold text-amber-700">TẦNG 4</span>
+                                <span class="text-[9px] text-amber-600">Max: 15%</span>
+                            </div>
+                            <div class="h-8 w-[1px] bg-amber-200"></div>
+                            <div class="flex-1">
+                                <h4 class="text-xs font-bold text-slate-800">Hàng sắp hết mùa (30-60 ngày), Flash Sale kéo traffic</h4>
+                                <p class="text-[10px] text-slate-600">Giảm giá có mục đích. Đảm bảo giá trị cover đầy đủ khấu hao tài sản dài hạn.</p>
+                            </div>
+                        </div>
+                        <!-- T3 -->
+                        <div class="flex items-center gap-4 p-3 bg-amber-50/20 border border-amber-200/30 rounded-xl">
+                            <div class="w-12 text-center shrink-0">
+                                <span class="block text-xs font-bold text-amber-700">TẦNG 3</span>
+                                <span class="text-[9px] text-amber-600">Max: 30%</span>
+                            </div>
+                            <div class="h-8 w-[1px] bg-amber-200/50"></div>
+                            <div class="flex-1">
+                                <h4 class="text-xs font-bold text-slate-800">Hàng lỗi thời nhẹ, hàng tồn kho 90-180 ngày</h4>
+                                <p class="text-[10px] text-slate-600">Xả hàng có kiểm soát. Áp đặt **Deadline 30 ngày**, hết hạn dời xuống Tầng 2.</p>
+                            </div>
+                        </div>
+                        <!-- T2 & T1 combined summary -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="p-3 bg-stone-100 border border-amber-200/20 rounded-xl">
+                                <span class="block text-[10px] font-bold text-amber-800 uppercase">TẦNG 2 (Giảm tối đa 40%)</span>
+                                <p class="text-[9px] text-slate-500 mt-1">Xả hàng tồn lâu ngày cần giải phóng vốn lưu động gấp. Chấp nhận lỗ quản lý.</p>
+                            </div>
+                            <div class="p-3 bg-amber-500/5 border border-amber-200/40 rounded-xl">
+                                <span class="block text-[10px] font-bold text-amber-900 uppercase">TẦNG 1 (Cắt lỗ 50%)</span>
+                                <p class="text-[9px] text-slate-500 mt-1">Hàng sắp hỏng, cận date, thanh lý kho đóng chi nhánh. Xả thu hồi vốn ngay.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing calculator sandbox -->
+                    <div class="mt-6 pt-5 border-t border-amber-100">
+                        <h4 class="font-bold text-xs text-amber-800 mb-3 uppercase tracking-wider">Trình Tính Giá Sàn Tương Tác</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="space-y-3">
+                                <div>
+                                    <label class="block text-[10px] text-slate-505 mb-1">Giá bán gốc (VND)</label>
+                                    <input type="number" id="base-price" value="500000" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-amber-500" oninput="runPricingCalculator()">
+                                </div>
+                            </div>
+                            <div class="bg-amber-50/40 border border-amber-100 rounded-xl p-4 space-y-2">
+                                <div class="flex justify-between text-[11px] text-slate-600">
+                                    <span>Giá sàn T5 (0%):</span>
+                                    <span id="price-t5" class="font-bold text-amber-800">500.000đ</span>
+                                </div>
+                                <div class="flex justify-between text-[11px] text-slate-600">
+                                    <span>Giá sàn T4 (Max -15%):</span>
+                                    <span id="price-t4" class="font-bold text-amber-700">425.000đ</span>
+                                </div>
+                                <div class="flex justify-between text-[11px] text-slate-600">
+                                    <span>Giá sàn T3 (Max -30%):</span>
+                                    <span id="price-t3" class="font-bold text-yellow-600">350.000đ</span>
+                                </div>
+                                <div class="flex justify-between text-[11px] text-slate-600">
+                                    <span>Giá sàn T2 (Max -40%):</span>
+                                    <span id="price-t2" class="font-bold text-amber-900">300.000đ</span>
+                                </div>
+                                <div class="flex justify-between text-[11px] text-slate-600 border-t border-amber-200 pt-1">
+                                    <span>Giá sàn T1 (Max -50%):</span>
+                                    <span id="price-t1" class="font-bold text-amber-950">250.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 Text detail -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Case Study 2</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-800 mt-1 mb-3">Định Giá 5 Tầng Khoa Học</h3>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                            Tài chính thực chiến bắt buộc phải dịch chuyển từ phòng ban xuống trực tiếp xưởng sản xuất để xây dựng định mức thao tác gốc, bịt các lỗ rò rỉ ngầm ngốn dòng tiền.
+                            Xóa bỏ hoàn toàn căn bệnh "giảm giá theo tổ tiên mách bảo". Cùng một mức doanh thu nhưng kiểm soát chặt chẽ các tầng chiết khấu sẽ giúp khôi phục biên gộp đáng kinh ngạc.
                         </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-700 shrink-0 text-xs font-bold">✔</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800 uppercase">Kiểm soát cơ cấu giảm giá</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                    Biết rõ giảm giá đang phạm vào loại chi phí nào để có hành động chính xác. Giảm giá để đẩy hàng tồn kho cũ chứ tuyệt đối không giảm giá hàng mới nhập (new arrival).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-700 shrink-0 text-xs font-bold">✔</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800 uppercase">Doanh thu thật - Dòng tiền thật</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                    Doanh nghiệp áp dụng định hướng đúng tầng giá cho đúng nhóm hàng sẽ giúp khôi phục biên lợi nhuận gộp từ 14% lên 44%, thu về thặng dư tiền mặt thật sự để tái đầu tư.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="quotes" class="py-16 px-4 max-w-7xl mx-auto scroll-mt-20">
+        <!-- Case 3 Container -->
+        <div id="case-panel-3" class="case-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Field operation standard visualization -->
+                <div class="lg:col-span-7 glass-panel rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4 border-b border-amber-100 pb-3">
+                        <span class="font-bold text-slate-800 text-sm">Đối Chiếu Định Mức Vận Hành Hiện Trường</span>
+                        <span class="text-[10px] text-amber-800 bg-amber-500/10 px-2 py-0.5 rounded-full font-semibold">Thất Thoát Ngầm 40%</span>
+                    </div>
+
+                    <!-- Side-by-side comparison graphics -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Sai quy cách -->
+                        <div class="border border-amber-5/25 bg-amber-500/5 rounded-xl p-4">
+                            <span class="block text-xs font-bold text-amber-800 mb-2 uppercase tracking-wide">VẬN HÀNH SAI QUY CÁCH</span>
+                            <div class="space-y-2 text-xs text-slate-600">
+                                <div class="flex justify-between border-b border-amber-100 pb-1">
+                                    <span>Số vòng quấn pallet:</span>
+                                    <span class="font-bold text-amber-900">4 vòng (Quen tay)</span>
+                                </div>
+                                <div class="flex justify-between border-b border-amber-100 pb-1">
+                                    <span>Xếp sản phẩm / Pallet:</span>
+                                    <span class="font-bold text-amber-900">80 SP (Lỏng lẻo)</span>
+                                </div>
+                                <div class="flex justify-between pt-1">
+                                    <span>Chi phí đóng gói:</span>
+                                    <span class="font-bold text-amber-900">500.000đ / Pallet</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-2 bg-amber-500/10 border border-amber-500/20 rounded-lg text-[10px] text-amber-800 text-center font-medium">
+                                Thất thoát nguyên vật liệu, phình to logistic ngầm.
+                            </div>
+                        </div>
+
+                        <!-- Đúng quy cách -->
+                        <div class="border border-amber-600/30 bg-amber-50 rounded-xl p-4">
+                            <span class="block text-xs font-bold text-amber-700 mb-2 uppercase tracking-wide">VẬN HÀNH CHUẨN ĐỊNH MỨC</span>
+                            <div class="space-y-2 text-xs text-slate-700">
+                                <div class="flex justify-between border-b border-amber-100 pb-1">
+                                    <span>Số vòng quấn pallet:</span>
+                                    <span class="font-bold text-amber-800">3 vòng (Tiêu chuẩn)</span>
+                                </div>
+                                <div class="flex justify-between border-b border-amber-100 pb-1">
+                                    <span>Xếp sản phẩm / Pallet:</span>
+                                    <span class="font-bold text-amber-800">100 SP (Chặt chẽ)</span>
+                                </div>
+                                <div class="flex justify-between pt-1">
+                                    <span>Chi phí đóng gói:</span>
+                                    <span class="font-bold text-amber-800">300.000đ / Pallet</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-2 bg-amber-500/20 border border-amber-500/30 rounded-lg text-[10px] text-amber-900 text-center font-semibold">
+                                Tiết kiệm 40% chi phí vật tư hiện trường trực tiếp.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-stone-50 border border-amber-100 rounded-xl text-xs text-slate-600 leading-relaxed">
+                        <strong class="text-slate-800 block mb-1">💡 Đúc kết từ chuyên gia:</strong>
+                        Chênh lệch tài chính chỉ là hậu quả cuối dòng. Hãy quản trị định mức vận hành từ nơi phát sinh nguyên nhân. Khi quy hoạch đúng thao tác của nhân viên tại hiện trường, doanh nghiệp sẽ hạn chế toàn bộ lỗ rò rỉ mà không cần tốn tiền mua sắm thêm bất kỳ hệ thống cồng kềnh nào.
+                    </div>
+                </div>
+
+                <!-- Case 3 Text detail -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Case Study 3</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-800 mt-1 mb-3">Định Mức Vận Hành Hiện Trường</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Cách dịch chuyển tư duy tài chính của chủ doanh nghiệp từ việc "truy tìm dòng tiền" sang "giám sát tính tuân thủ quy trình hành động tại xưởng".
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-700 shrink-0 text-xs font-bold">✔</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800 uppercase">Tài chính phải sát Vận hành</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                    Kế toán không được chỉ ngồi văn phòng gõ chứng từ. Tài chính thực chiến phải bước xuống xưởng, bóc tách thao tác sản xuất thực tế để đặt tiêu chuẩn dòng tiền tương ứng.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-700 shrink-0 text-xs font-bold">✔</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800 uppercase">Quản trị bằng hệ thống giám sát</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                    Lắp đặt camera kiểm soát hành vi và gắn kết kết quả tiết kiệm vào chính sách thưởng phạt tài chính. Nhân viên tuân thủ định mức tốt sẽ bảo vệ được lợi nhuận của toàn bộ hệ sinh thái.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Câu nói đáng chú ý (Golden Quotes Grid) -->
+    <section id="quotes" class="py-16 px-4 bg-amber-50/10 border-t border-amber-100 scroll-mt-20">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <span class="text-xs font-bold text-amber-700 uppercase tracking-widest">Lời Vàng Thực Chiến</span>
                 <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-800 tracking-tight mt-1">Câu nói đáng chú ý</h2>
-                <p class="text-xs sm:text-sm text-slate-500 mt-2">Tổng hợp nguyên bản hệ tư duy điều hành lý trí của diễn giả Nguyễn Đức Thái</p>
+                <p class="text-xs sm:text-sm text-slate-500 mt-2">Được ghi nhận nguyên bản và phân tích ý nghĩa sâu sắc dành riêng cho người không tham gia</p>
             </div>
 
-            <div class="space-y-12 max-w-5xl mx-auto">
-                <div class="p-6 rounded-2xl bg-white border border-amber-200/50 shadow-sm">
-                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-4">NHÓM 1: BẢN CHẤT CỦA CHIẾN LƯỢC CHÍNH LÀ TIỀN BẠC VÀ SỰ SINH TỒN</h3>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Người ta cứ bảo là chiến lược là thế này là thế kia nhưng trong mắt của dân tài chính anh chị tiêu tiền ở đâu, chiến lược ở đấy. Thật chứ để mà lôi được tiền của Thái ra khỏi túi Thái là rất khó luôn, thế chứng tỏ là nếu người nào mà lôi được ra thì khá chắc đấy là chiến lược... Anh chị nhớ rút ra thành tiền, anh chị sẽ tự phát hiện ra là mình không có (hoặc không nên có) nhiều chiến lược như vậy."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Thái sống lâu, không phải Thái rộng bởi vì Thái sống được lâu. Mà sống được lâu thì phải có gì ạ? Phải có tiền anh chị ạ."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Anh chị dùng cái gì là mũi nhọn cũng được nhưng phải đổi ra một là doanh thu, hai là chi phí và ba là trực tiếp tiền. Đừng có đổi ra thiện cảm của khách hàng, niềm vui và nụ cười của khách hàng. Cuối cùng vẫn đổi hết ra tiền. Đằng sau cái nụ cười đấy, 10 cái răng đấy sẽ là 10 đô la."</p>
+            <div class="space-y-12">
+                <!-- Group 1 -->
+                <div>
+                    <h3 class="text-sm font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-6">NHÓM 1: BẢN CHẤT CỦA CHIẾN LƯỢC CHÍNH LÀ TIỀN BẠC VÀ SỰ SINH TỒN</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Người ta cứ bảo là chiến lược là thế này là thế kia nhưng trong mắt của dân tài chính anh chị tiêu tiền ở đâu, chiến lược ở đấy. Thật chứ để mà lôi được tiền của Thái ra khỏi túi Thái là rất khó luôn, thế chứng tỏ là nếu người nào mà lôi được ra thì khá chắc đấy là chiến lược... Anh chị nhớ rút ra thành tiền, anh chị sẽ tự phát hiện ra là mình không có (hoặc không nên có) many chiến lược như vậy."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Thái sống lâu, không phải Thái rộng bởi vì Thái sống được lâu. Mà sống được lâu thì phải có gì ạ? Phải có tiền anh chị ạ."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between md:col-span-2">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Anh chị dùng cái gì là mũi nhọn cũng được nhưng phải đổi ra một là doanh thu, hai là chi phí và ba là trực tiếp tiền. Đừng có đổi ra thiện cảm của khách hàng, niềm vui và nụ cười của khách hàng. Cuối cùng vẫn đổi hết ra tiền. Đằng sau cái nụ cười đấy, 10 cái răng đấy sẽ là 10 đô la."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-white border border-amber-100 rounded-xl text-xs text-slate-600 leading-relaxed">
+                        <strong class="text-amber-800 block mb-1">💡 Giải thích ý nghĩa cho người không tham gia:</strong>
+                        Dưới góc nhìn của chuyên gia tài chính, chiến lược thực sự không nằm ở những bản kế hoạch hô hào trên giấy, mà nằm ở việc doanh nghiệp **quyết định chi tiền vào đâu**. Lực ở đâu thì chiến lược ở đó. Đích đến cuối cùng của kinh doanh không phải là quy mô hoành tráng ("sống rộng") hay những giá trị vô hình (như nụ cười của khách hàng), mà là khả năng tạo ra dòng tiền dương để tồn tại trong dài hạn ("sống lâu"). Dù bạn chăm sóc khách hàng tốt đến đâu, nó cũng phải chuyển hóa được thành doanh thu và lợi nhuận thực tế.
                     </div>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-white border border-amber-200/50 shadow-sm">
-                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-4">NHÓM 2: SỰ TÀN KHỐC VÀ LÝ TRÍ TRONG ĐỊNH GIÁ & QUẢN TRỊ</h3>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Tài chính là công cụ xét nghiệm máu tốt nhất bởi vì cứ nhìn vào đấy một cái là cả cái doanh nghiệp này run sợ. Có nghĩa là không ai có thể cãi nhau được về việc là em làm không có lợi nhuận."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Có câu kinh điển: 'Em đã bán gấp đôi giá vốn, anh còn cần gì nữa?'. Anh cần gấp năm! Thực sự là đôi khi cần gấp năm thì mới đủ cover được các chi phí tầng tầng lớp lớp ở cái tổ chức này chứ còn gấp đôi chắc chắn không đủ."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Nói chung là với tài chính mà cứ sống thiếu lý trí lúc nào là phá sản lúc đấy."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Tài chính cá nhân của anh chị sẽ ảnh hưởng đến tinh thần của anh chị. Tinh thần của anh chị sẽ ảnh hưởng luôn đến quá trình chất lượng điều phối doanh nghiệp của anh chị. Anh chị tách được hai cái đấy ra là tốt nhất."</p>
+                <!-- Group 2 -->
+                <div>
+                    <h3 class="text-sm font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-6">NHÓM 2: SỰ TÀN KHỐC VÀ LÝ TRÍ TRONG ĐỊNH GIÁ & QUẢN TRỊ</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Tài chính là công cụ xét nghiệm máu tốt nhất bởi vì cứ nhìn vào đấy một cái là cả cái doanh nghiệp này run sợ. Có nghĩa là không ai có thể cãi nhau được về việc là em làm không có lợi nhuận."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Có câu kinh điển: 'Em đã bán gấp đôi giá vốn, anh còn cần gì nữa?'. Anh cần gấp năm! Thực sự là đôi khi cần gấp năm thì mới đủ cover được các chi phí tầng tầng lớp lớp ở cái tổ chức này chứ còn gấp đôi chắc chắn không đủ."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Nói chung là với tài chính mà cứ sống thiếu lý trí lúc nào là phá sản lúc đấy."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Tài chính cá nhân của anh chị sẽ ảnh hưởng đến tinh thần của anh chị. Tinh thần của anh chị sẽ ảnh hưởng luôn đến quá trình chất lượng điều phối doanh nghiệp của anh chị. Anh chị tách được hai cái đấy ra là tốt nhất."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-white border border-amber-100 rounded-xl text-xs text-slate-600 leading-relaxed">
+                        <strong class="text-amber-800 block mb-1">💡 Giải thích ý nghĩa cho người không tham gia:</strong>
+                        Báo cáo tài chính giống như tờ "phiếu xét nghiệm máu" phơi bày tình trạng của doanh nghiệp bằng những con số vô hồn, đập tan mọi sự ngụy biện hay cảm tính. Trong việc định giá, nhiều người ngây thơ cho rằng bán giá gấp đôi giá vốn là đã có lãi lớn. Thực tế, khoản chênh lệch đó phải gồng gánh vô vàn chi phí quản lý, marketing, hao mòn tài sản, công nghệ... nên đôi khi phải định giá gấp 5 lần mới bù đắp nổi chi phí. Cuối cùng, người chủ phải rạch ròi túi tiền cá nhân và công ty, vì nếu bản thân người chủ gặp khủng hoảng tài chính cá nhân, họ sẽ ra quyết định điều hành sai lầm.
                     </div>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-white border border-amber-200/50 shadow-sm">
-                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-4">NHÓM 3: SỰ LỰA CHỌN GIỮA TÌNH CẢM VÀ LÝ TRÍ KHI NHÂN SỰ LỚN LÊN</h3>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Người ta dùng tình cảm với mình cho lúc người ta chưa có vợ thôi ạ... Và người ta cũng sẽ còn tình cảm với mình khi người ta chưa có con thôi. Và đặc biệt là khi người ta chưa có hai đứa con học trường quốc tế, thì người ta không vẫn còn dùng tình cảm."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Cứ đứa nào mà chắn đường tăng trưởng của tao là chém!"</p>
+                <!-- Group 3 -->
+                <div>
+                    <h3 class="text-sm font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-6">NHÓM 3: SỰ LỰA CHỌN GIỮA TÌNH CẢM VÀ LÝ TRÍ KHI NHÂN SỰ LỚN LÊN</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Người ta dùng tình cảm với mình cho lúc người ta chưa có vợ thôi ạ... Và người ta cũng sẽ còn tình cảm với mình khi người ta chưa có con thôi. Và đặc biệt là khi người ta chưa có hai đứa con học trường quốc tế, thì người ta không vẫn còn dùng tình cảm."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Cứ đứa nào mà chắn đường tăng trưởng của tao là chém!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-white border border-amber-100 rounded-xl text-xs text-slate-600 leading-relaxed">
+                        <strong class="text-amber-800 block mb-1">💡 Giải thích ý nghĩa cho người không tham gia:</strong>
+                        Trong giai đoạn đầu khởi nghiệp, mọi người có thể gắn bó vì tình anh em. Nhưng khi nhân sự lớn lên, có gia đình và gánh nặng cơm áo gạo tiền (nuôi con cái học hành), người lãnh đạo không thể chỉ dùng "tình cảm" hay "lời nói suông" để giữ người. Ở giai đoạn doanh nghiệp cần tăng trưởng mạnh, người chủ phải dùng lý trí của một nhà đầu tư: sẵn sàng dẹp bỏ hoặc sa thải bất kỳ cá nhân hay đơn vị kinh doanh nào cản trở đà tăng trưởng chung của tổ chức, không để tình thương làm hại doanh nghiệp.
                     </div>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-white border border-amber-200/50 shadow-sm">
-                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-4">NHÓM 4: CHI TIẾT VỀ NGHỆ THUẬT "BÀN TAY SẮT BỌC NHUNG" TRONG QUẢN TRỊ</h3>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Nói chung là bàn tay sắt bọc nhung, tức là về mặt tiêu chuẩn thì tôi rất cao nhưng về mặt giao tiếp thì tôi lại rất tình cảm. Chứ bàn tay sắt mà không bọc nhung thì thôi là bên kia ăn vả cái là đi luôn. Ở giai đoạn này chúng ta lại không có nhiều tiền để chúng ta chỉ đeo mỗi bàn tay sắt. Giả sử như Vin đi, nhiều tiền đúng không? Đeo mỗi bàn tay sắt thôi. Tức là gì? Anh không làm được thế là xong, ngay lập tức tôi mời anh ra khỏi tổ chức bởi vì tôi hoàn toàn có tiền để tôi tuyển người khác."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Ít nhất bàn tay của chúng ta (người lãnh đạo điều hành) phải bọc nhung. Còn phía đằng sau khi chúng ta đã nói chuyện with nhau bằng số thì chắc chắn là bàn tay sắt rồi."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Họ (Giám đốc Tài chính - CFO) chính là bàn tay sắt bọc sắt. Thái nói thật là nếu mà anh chị kỳ vọng một người CFO mà giao tiếp một cách rất mượt mà thì không có đâu ạ. Cả cuộc đời họ theo đuổi bằng những con số... Tôi không cần phải nhung, tôi không cần phải đối thoại. Tôi chỉ cần dùng tiền để chúng ta thảo luận với nhau."</p>
+                <!-- Group 4 -->
+                <div>
+                    <h3 class="text-sm font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-6">NHÓM 4: CHI TIẾT VỀ NGHỆ THUẬT "BÀN TAY SẮT BỌC NHUNG" TRONG QUẢN TRỊ</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Nói chung là bàn tay sắt bọc nhung, tức là về mặt tiêu chuẩn thì tôi rất cao nhưng về mặt giao tiếp thì tôi lại rất tình cảm. Chứ bàn tay sắt mà không bọc nhung thì thôi là bên kia ăn vả cái là đi luôn. Ở giai đoạn này chúng ta lại không có nhiều tiền để chúng ta chỉ đeo mỗi bàn tay sắt. Giả sử như Vin đi, nhiều tiền đúng không? Đeo mỗi bàn tay sắt thôi. Tức là gì? Anh không làm được thế là xong, ngay lập tức tôi mời anh ra khỏi tổ chức bởi vì tôi hoàn toàn có tiền để tôi tuyển người khác."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Ít nhất bàn tay của chúng ta (người lãnh đạo điều hành) phải bọc nhung. Còn phía đằng sau khi chúng ta đã nói chuyện with nhau bằng số thì chắc chắn là bàn tay sắt rồi."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Họ (Giám đốc Tài chính - CFO) chính là bàn tay sắt bọc sắt. Thái nói thật là nếu mà anh chị kỳ vọng một người CFO mà giao tiếp một cách rất mượt mà thì không có đâu ạ. Cả cuộc đời họ theo đuổi bằng những con số... Tôi không cần phải nhung, tôi không cần phải đối thoại. Tôi chỉ cần dùng tiền để chúng ta thảo luận với nhau."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-white border border-amber-100 rounded-xl text-xs text-slate-600 leading-relaxed">
+                        <strong class="text-amber-800 block mb-1">💡 Giải thích ý nghĩa cho người không tham gia:</strong>
+                        Sự tinh tế trong quản trị nằm ở việc thấu hiểu vị thế tài chính của công ty mình để chọn cách giao tiếp phù hợp với nhân viên:
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li><strong>Tại sao phải "bọc nhung"?:</strong> Những doanh nghiệp vừa và nhỏ (SMEs) không có nguồn lực tài chính khổng lồ như các tập đoàn lớn (ví dụ: Vingroup) để có thể thích thì đuổi việc và lấy tiền đè người, lập tức thuê người mới thay thế. Vì không có nhiều tiền, người lãnh đạo buộc phải dùng sự mềm mỏng, tình cảm, sự khéo léo trong giao tiếp ("bọc nhung") để xoa dịu và giữ chân nhân sự vận hành.</li>
+                            <li><strong>Thế nào là "bàn tay sắt"?:</strong> Dù thái độ và lời nói có mềm mỏng đến đâu, thì các tiêu chuẩn về quy trình vận hành, định mức chi phí và mục tiêu lợi nhuận đặt ra phía sau hậu trường phải cực kỳ khắt khe, rõ ràng và không có sự thỏa hiệp ("bàn tay sắt"). Khi đánh giá hiệu quả kinh doanh, chúng ta chỉ đối thoại với nhau bằng những con số lạnh lùng.</li>
+                            <li><strong>Sự khác biệt của CFO (Giám đốc tài chính):</strong> Nếu CEO là người dùng "bàn tay sắt bọc nhung" để dung hòa tổ chức, thì CFO phải là "bàn tay sắt bọc sắt". Chức năng của họ là bảo vệ sinh mệnh dòng tiền, họ chỉ quan tâm đến tính toán và lợi nhuận, không cần nể nang, không cần đối thoại mềm mỏng. CFO dùng chính việc thắt chặt ngân sách để làm ngôn ngữ giao tiếp.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-white border border-amber-200/50 shadow-sm">
-                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-4">NHÓM 5: TƯ DUY XÂY DỰNG HỆ THỐNG VÀ TỰ ĐỘNG HÓA</h3>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Cái gì là lõi thì anh chị có thể để full-time. Còn cái gì không phải là lõi thì anh chị có thể thuê ngoài."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Sứ mệnh tốt nhất hãy chuyển hóa thành vận hành và ngồi luôn trong một cái phần mềm, trong một cái hệ thống giám sát nào đấy thì sứ mệnh sẽ được giám sát."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Mình không đảm bảo là tất cả mọi người đều có đầu giống mình, suy nghĩ được giống mình. Thế nên mình phải biến cái quy trình đấy nó dễ nhất có thể để người ta chỉ cần nhìn vào dữ liệu là người ta có thể ra quyết định giống mình."</p>
-                        <p class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500">"Cái quan điểm từ xưa đến giờ của mình luôn là tôi sẽ bị thay thế, tôi nên bị thay thế, tôi phải bị thay thế để tôi còn về hưu."</p>
+                <!-- Group 5 -->
+                <div>
+                    <h3 class="text-sm font-bold text-amber-700 uppercase tracking-widest border-b border-amber-200 pb-2 mb-6">NHÓM 5: TƯ DUY XÂY DỰNG HỆ THỐNG VÀ TỰ ĐỘNG HÓA</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Cái gì là lõi thì anh chị có thể để full-time. Còn cái gì không phải là lõi thì anh chị có thể thuê ngoài."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Sứ mệnh tốt nhất hãy chuyển hóa thành vận hành và ngồi luôn trong một cái phần mềm, trong một cái hệ thống giám sát nào đấy thì sứ mệnh sẽ được giám sát."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Mình không đảm bảo là tất cả mọi người đều có đầu giống mình, suy nghĩ được giống mình. Thế nên mình phải biến cái quy trình đấy nó dễ nhất có thể để người ta chỉ cần nhìn vào dữ liệu là người ta có thể ra quyết định giống mình."
+                            </p>
+                        </div>
+                        <div class="quote-card p-6 rounded-2xl flex flex-col justify-between">
+                            <p class="text-xs sm:text-sm text-slate-800 italic leading-relaxed font-medium">
+                                "Cái quan điểm từ xưa đến giờ của mình luôn là tôi sẽ bị thay thế, tôi nên bị thay thế, tôi phải bị thay thế để tôi còn về hưu."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-white border border-amber-100 rounded-xl text-xs text-slate-600 leading-relaxed">
+                        <strong class="text-amber-800 block mb-1">💡 Giải thích ý nghĩa cho người không tham gia:</strong>
+                        Mọi lý tưởng hay "sứ mệnh" sẽ chỉ là lời nói suông nếu không được cài cắm thành các quy chuẩn vận hành cụ thể trên phần mềm để đo lường và giám sát. Doanh nghiệp không thể lớn mạnh nếu chỉ dựa vào một cái đầu xuất chúng của người chủ. Cách duy nhất là đóng gói những kinh nghiệm phức tạp thành các quy trình, hệ thống dữ liệu đơn giản nhất, để một nhân viên bình thường nhìn vào cũng biết phải làm gì như một người sếp thực thụ. Về quản trị chi phí, hãy giữ bộ máy cốt lõi nhất ở dạng toàn thời gian (full-time), và mạnh dạn thuê ngoài (outsource) những khâu không quan trọng. Mục đích tối thượng của việc xây dựng hệ thống là giúp tổ chức tự vận hành, để người chủ thành công "bị thay thế" và đạt được sự tự do.
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="jtbd" class="py-16 px-4 max-w-5xl mx-auto scroll-mt-20">
-            <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-amber-300/30">
-                <div class="text-center mb-8">
-                    <span class="text-xs font-bold text-amber-700 uppercase tracking-widest">SME Action Checklist</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight mt-1">Nhiệm Vụ Chiến Lược Cần Làm Ngay</h2>
+    <!-- Section: Jobs to be Done (Checklist) -->
+    <section id="jtbd" class="py-16 px-4 max-w-5xl mx-auto scroll-mt-20">
+        <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-amber-300/30">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-amber-700 uppercase tracking-widest">SME Action Checklist</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight mt-1">Nhiệm Vụ Chiến Lược Cần Làm Ngay</h2>
+                <p class="text-xs sm:text-sm text-slate-500 mt-2">Dựa trên triết lý tối ưu và quản trị lý trí của diễn giả Nguyễn Đức Thái</p>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="mb-8 max-w-md mx-auto">
+                <div class="flex justify-between items-center text-xs text-slate-500 mb-2">
+                    <span>Mức độ sẵn sàng tối ưu tài chính:</span>
+                    <span id="jtbd-percent" class="font-bold text-amber-700">0%</span>
+                </div>
+                <div class="w-full h-2 bg-stone-100 rounded-full overflow-hidden border border-amber-200/50">
+                    <div id="jtbd-progress-bar" class="h-full bg-amber-500 w-0 transition-all duration-300"></div>
+                </div>
+            </div>
+
+            <!-- Checklist Grid -->
+            <div class="space-y-4">
+                <!-- Group 1 -->
+                <div>
+                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">01. Đo lường "Chất lượng của Doanh thu" trên P&L</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
+                            <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
+                            <div class="text-xs sm:text-sm">
+                                <span class="block font-bold text-slate-800">Xác lập công thức tạo lợi nhuận & Lập ngân sách (Budget)</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Quy đổi mọi chiến lược trên giấy ra các con số tài chính cụ thể. Ghi nhận và kiểm soát liên tục so với thực tế để đảm bảo tính kỷ luật chi tiêu.</span>
+                            </div>
+                        </label>
+                        <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
+                            <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
+                            <div class="text-xs sm:text-sm">
+                                <span class="block font-bold text-slate-800">Bóc tách P&L đến từng đơn vị kinh doanh (BU) / Sản phẩm / Kênh bán</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Tuyệt đối không gộp chung một giỏ. Đo lường tỷ lệ lãi góp (marginal contribution) để phát hiện nguồn thặng dư thực tế.</span>
+                            </div>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="mb-8 max-w-md mx-auto">
-                    <div class="flex justify-between items-center text-xs text-slate-500 mb-2">
-                        <span>Mức độ sẵn sàng tối ưu tài chính:</span>
-                        <span id="jtbd-percent" class="font-bold text-amber-700">0%</span>
-                    </div>
-                    <div class="w-full h-2 bg-stone-100 rounded-full overflow-hidden border border-amber-200/50">
-                        <div id="jtbd-progress-bar" class="h-full bg-amber-500 w-0 transition-all duration-300"></div>
+                <!-- Group 2 -->
+                <div class="pt-2">
+                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">02. Thiết lập cơ chế "Bàn tay sắt bọc nhung"</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
+                            <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
+                            <div class="text-xs sm:text-sm">
+                                <span class="block font-bold text-slate-800">Chuyển dịch nhân sự từ "Sale Owner" sang "P&L Owner"</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Yêu cầu quản lý cấp trung không chỉ chạy doanh số mà phải tự chịu trách nhiệm cân đối chi phí và bảo toàn biên lợi nhuận của phòng ban.</span>
+                            </div>
+                        </label>
                     </div>
                 </div>
 
-                <div class="space-y-4">
-                    <div>
-                        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">01. Đo lường "Chất lượng của Doanh thu" trên P&L</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
-                                <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
-                                <div class="text-xs sm:text-sm">
-                                    <span class="block font-bold text-slate-800">Xác lập công thức tạo lợi nhuận & Lập ngân sách (Budget)</span>
-                                    <span class="block text-xs text-slate-500 mt-0.5">Quy đổi chiến lược thành số liệu tài chính để kiểm soát kỷ luật chi tiêu thực tế.</span>
-                                </div>
-                            </label>
-                            <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
-                                <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
-                                <div class="text-xs sm:text-sm">
-                                    <span class="block font-bold text-slate-800">Bóc tách P&L đến từng đơn vị kinh doanh BU / Sản phẩm / Kênh bán</span>
-                                    <span class="block text-xs text-slate-500 mt-0.5">Đo lường lãi góp để phát hiện và dẫn vốn chính xác vào động cơ sinh thặng dư thực sự.</span>
-                                </div>
-                            </label>
-                        </div>
+                <!-- Group 3 -->
+                <div class="pt-2">
+                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">03. Lego hóa quy trình trước khi nhúng AI & Công nghệ</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
+                            <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
+                            <div class="text-xs sm:text-sm">
+                                <span class="block font-bold text-slate-800">Bản đồ quy chuẩn hóa thao tác hiện trường (Mega to Sub-process)</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Xác định rõ ràng khâu nào giao cho AI Agents tự động, khâu nào do Người + AI kết hợp, và khâu nào bắt buộc 100% Con người thấu cảm làm.</span>
+                            </div>
+                        </label>
+                        <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
+                            <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
+                            <div class="text-xs sm:text-sm">
+                                <span class="block font-bold text-slate-800">Đo lường hiệu quả công nghệ trực tiếp bằng Business Impact</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Đo lường chi phí AI trên đầu người và năng suất lao động (Revenue per head) trên P&L, không chấp nhận báo cáo định tính như "nhân sự vui vẻ/nhàn hạ hơn".</span>
+                            </div>
+                        </label>
                     </div>
+                </div>
 
-                    <div class="pt-2">
-                        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">02. Thiết lập cơ chế "Bàn tay sắt bọc nhung"</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
-                                <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
-                                <div class="text-xs sm:text-sm">
-                                    <span class="block font-bold text-slate-800">Chuyển dịch nhân sự từ "Sale Owner" sang "P&L Owner"</span>
-                                    <span class="block text-xs text-slate-500 mt-0.5">Yêu cầu cấp trung chịu trách nhiệm cả về doanh thu lẫn cơ cấu chi phí tối ưu hóa lợi nhuận.</span>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="pt-2">
-                        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">03. Lego hóa quy trình trước khi nhúng AI & Công nghệ</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
-                                <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
-                                <div class="text-xs sm:text-sm">
-                                    <span class="block font-bold text-slate-800">Bản đồ quy chuẩn hóa thao tác hiện trường (Mega to Sub-process)</span>
-                                    <span class="block text-xs text-slate-500 mt-0.5">Quy định luồng việc để giao cho AI Agents tự động, bọc nhung khâu cảm xúc cho con người.</span>
-                                </div>
-                            </label>
-                            <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
-                                <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
-                                <div class="text-xs sm:text-sm">
-                                    <span class="block font-bold text-slate-800">Đo lường hiệu quả công nghệ trực tiếp bằng Business Impact</span>
-                                    <span class="block text-xs text-slate-500 mt-0.5">Đo lường năng suất lao động (Revenue per head) trực tiếp trên bảng P&L.</span>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="pt-2">
-                        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">04. Bảo đảm năng lực thanh khoản & Chi phí linh hoạt</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
-                                <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
-                                <div class="text-xs sm:text-sm">
-                                    <span class="block font-bold text-slate-800">Tối thiểu hóa chi phí cố định (Fixed Cost)</span>
-                                    <span class="block text-xs text-slate-500 mt-0.5">Biến mọi chi phí có thể thành dạng linh hoạt, thuê ngoài khâu không cốt lõi để phòng rủi ro vĩ mô.</span>
-                                </div>
-                            </label>
-                            <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
-                                <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
-                                <div class="text-xs sm:text-sm">
-                                    <span class="block font-bold text-slate-800">Cấu trúc Quỹ an toàn cá nhân độc lập khỏi Doanh nghiệp</span>
-                                    <span class="block text-xs text-slate-500 mt-0.5">Rạch ròi túi tiền cá nhân và tài sản công ty, duy trì quỹ tĩnh độc lập để bảo toàn tinh thần người chủ.</span>
-                                </div>
-                            </label>
-                        </div>
+                <!-- Group 4 -->
+                <div class="pt-2">
+                    <h3 class="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">04. Bảo đảm năng lực thanh khoản & Cấu trúc chi phí linh hoạt</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
+                            <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
+                            <div class="text-xs sm:text-sm">
+                                <span class="block font-bold text-slate-800">Tối thiểu hóa chi phí cố định (Fixed Cost)</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Biến mọi chi phí có thể thành dạng linh hoạt. Ưu tiên thuê ngoài (Outsource) các khâu không cốt lõi, chỉ giữ full-time cho năng lực lõi thực sự.</span>
+                            </div>
+                        </label>
+                        <label class="flex items-start gap-3 p-3 bg-white hover:bg-amber-50/20 rounded-xl border border-amber-200/40 cursor-pointer transition-all">
+                            <input type="checkbox" class="jtbd-item mt-1 w-4 h-4 rounded text-amber-600 bg-white border-amber-300 focus:ring-0 focus:ring-offset-0" onchange="updateJTBDProgress()">
+                            <div class="text-xs sm:text-sm">
+                                <span class="block font-bold text-slate-800">Cấu trúc Quỹ an toàn cá nhân độc lập khỏi Doanh nghiệp</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Xây dựng quỹ vàng dự trữ, rạch ròi túi tiền cá nhân và tài khoản công ty để bảo vệ tinh thần người chủ trước mọi biến cố điều phối doanh nghiệp.</span>
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="border-t border-amber-200 py-12 px-4 max-w-7xl mx-auto text-center text-xs text-slate-500 relative z-10">
+    <!-- Footer -->
+    <footer class="border-t border-amber-200 py-12 px-4 max-w-7xl mx-auto text-center text-xs text-slate-500">
         <div class="flex justify-center gap-4 mb-4">
             <span class="font-bold text-amber-800">SAPP Education</span>
             <span>·</span>
@@ -433,6 +828,216 @@
         <p class="mb-2 font-bold text-slate-700 text-sm">Recap by: Wise Training - Đào tạo kĩ năng thuyết trình trong doanh nghiệp (Liên hệ Mr. Quang Sỹ: 097 8251382)</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JS Logic -->
+    <script>
+        // Database for 5 Growth Stages
+        const stagesData = {
+            1: {
+                title: "Giai Đoạn 01: FOUNDATION (Nền Tảng)",
+                context: "Doanh nghiệp có sản phẩm bán được; tăng trưởng chủ yếu dựa vào cơ hội ngắn hạn và năng lực cá nhân của chủ doanh nghiệp.",
+                pain: "Chưa rõ hướng đi chiến lược dài hạn; doanh thu tăng nhưng lợi nhuận mỏng hoặc âm; sản xuất dàn trải, thiếu sản phẩm lõi; lúng túng trong phân bổ nguồn lực eo hẹp.",
+                finance: "Xác lập công thức tạo lợi nhuận cơ bản (bóc tách cấu trúc doanh thu, giá vốn, điểm hòa vốn và mô hình định giá sản phẩm). Biến đổi chi phí cố định tối đa sang chi phí linh hoạt, ưu tiên dòng tiền duy trì.",
+                tech: "Tập trung các công cụ ghi nhận dữ liệu giao dịch căn bản: Quản lý thông tin khách hàng, doanh thu, dòng tiền ra vào, pipeline bán hàng cơ bản.",
+                questions: [
+                    "Chúng ta đang thực sự kiếm tiền và tạo thặng dư từ phân khúc nào?",
+                    "Đâu là sản phẩm mũi nhọn đáng dồn lực nhất ở thời điểm hiện tại?",
+                    "Nếu tiếp tục phân bổ dàn trải thế này, doanh nghiệp có tích lũy được tiền thật không?"
+                ]
+            },
+            2: {
+                title: "Giai Đoạn 02: BUILD (Chuẩn Hóa)",
+                context: "Sản phẩm cốt lõi đã được định vị rõ trên thị trường; doanh nghiệp bắt đầu thiết lập quy chuẩn và tuyển dụng nhân sự vận hành quy trình.",
+                pain: "Bộ máy đứt gãy vận hành nghiêm trọng do thiếu tính liên thông; bùng phát sai sót và lỗi hỏng tại hiện trường sản xuất; người chủ ngập chìm vào việc dập lửa sự vụ.",
+                finance: "Tối ưu hóa hiệu suất chi phí thông qua thiết lập định mức vận hành chi tiết; xây dựng ngân sách dựa trên hoạt động (activity-based budgeting); đo lường hiệu quả chi tiết theo kênh, nhóm sản phẩm và khách hàng.",
+                tech: "Triển khai hệ thống Quản lý quy trình và dữ liệu tập trung (CRM/vận hành lõi) để chuẩn hóa và liên kết dữ liệu dòng thông tin từ Bán hàng đến Chuyển giao dịch vụ.",
+                questions: [
+                    "Vì sao số lượng đơn hàng đông hơn nhưng bộ máy vận hành lại rối và phát sinh lỗi nhiều hơn?",
+                    "Khâu hành động nào tại hiện trường đang làm thất thoát tiền ngầm nhiều nhất?",
+                    "Nếu tiếp tục nhân rộng quy mô, bộ máy sẽ phình to lên hay vỡ vận hành trước?"
+                ]
+            },
+            3: {
+                title: "Giai Đoạn 03: GROWTH (Động Cơ Tăng Trưởng)",
+                context: "Doanh nghiệp sở hữu nhiều đơn vị kinh doanh (BUs), sản phẩm hoặc kênh bán hàng tăng trưởng mạnh mẽ và song hành.",
+                pain: "Ban giám đốc rơi vào trạng thái 'mù mịt quyết định'; không rõ mảng nào thực sự mang lại lợi nhuận gộp ròng cao nhất; nguồn lực bị phân mảnh do yếu tố tình cảm.",
+                finance: "Dẫn vốn thông minh vào động cơ tăng trưởng thực tế; chuẩn hóa cấu trúc P&L đến từng đơn vị kinh doanh BU riêng biệt; đo lường sức mạnh đòn bẩy kinh doanh và lãi đóng góp.",
+                tech: "Hợp nhất và tích hợp dữ liệu đa nguồn (Marketing, Sales, Finance, Operations) thành các Dashboard realtime hỗ trợ ra 4 quyết định: Thúc, Sản lượng, Điểm nghẽn, Cơ cấu.",
+                questions: [
+                    "Doanh nghiệp đang thực sự phát triển hiệu quả, hay chỉ phình to về chi phí nhân sự và vận hành?",
+                    "Đâu là đơn vị kinh doanh mũi nhọn thực chất cần tập trung rót vốn ưu tiên?",
+                    "Tại sao hệ thống có rất nhiều dữ liệu thô nhưng ban lãnh đạo vẫn thiếu cơ sở chắc chắn để đưa ra quyết định xuống tiền?"
+                ]
+            },
+            4: {
+                title: "Giai Đoạn 04: SCALE (Tối Ưu Mô Hình)",
+                context: "Quy mô doanh nghiệp tăng tốc nhanh; độ phức tạp và tính phân mảnh giữa các đơn vị kinh doanh đạt ngưỡng cực đại.",
+                pain: "Mất kiểm soát hệ thống; sự tăng trưởng phụ thuộc quá nhiều vào năng lực cá nhân của các quản lý chủ chốt; chi phí phối hợp nội bộ phình to lấn át lợi nhuận.",
+                finance: "Quản trị các đơn vị kinh doanh như một danh mục đầu tư chuyên nghiệp; kiểm soát tài chính và dòng tiền qua hệ thống 3 tầng; thiết lập kỷ luật phân bổ và điều chuyển ngân sách nghiêm ngặt.",
+                tech: "Triển khai hệ thống Điều hành hợp nhất; xây dựng nguồn số liệu thống nhất - hạch toán đa chiều; Dashboard phân tầng (CEO, HO, BU) hỗ trợ kiểm soát thực thi rủi ro.",
+                questions: [
+                    "Chúng ta có tiêu chí rõ ràng nào bằng số liệu để rót thêm vốn, giữ nguyên hay đóng cửa một đơn vị kinh doanh?",
+                    "Lợi nhuận của doanh nghiệp đến từ năng lực hệ thống tự vận hành hay do năng lực của một vài cá nhân chủ chốt?",
+                    "Dòng tiền thặng dư đang được tái đầu tư để tăng trưởng năng lực cốt lõi, hay đang tiêu đi để bù đắp các lỗ hổng vận hành?"
+                ]
+            },
+            5: {
+                title: "Giai Đoạn 05: GLOBALIZE (Mở Rộng Đa Quốc Gia/Đa Mô Hình)",
+                context: "Doanh nghiệp vươn tầm ra thị trường quốc tế hoặc nhân bản mô hình kinh doanh sang một hệ sinh thái đa pháp nhân, đa bối cảnh.",
+                pain: "Rủi ro chính trị, pháp lý, thuế và tỷ giá tăng mạnh; mâu thuẫn sâu sắc giữa việc chuẩn hóa quy trình toàn cục và tính thích ứng địa phương hóa; tốc độ mở rộng vượt xa năng lực giám sát rủi ro của HO.",
+                finance: "Quản trị rủi ro danh mục đầu tư đa quốc gia; kiểm soát chặt chẽ cấu trúc vốn và luân chuyển dòng tiền xuyên biên giới; đánh giá dựa trên giá trị dài hạn toàn cục (Enterprise Value).",
+                tech: "Đồng bộ hóa hạ tầng quản lý quy mô lớn xuyên biên giới; xây dựng hệ thống báo cáo và cảnh báo rủi ro tự động realtime toàn cầu.",
+                questions: [
+                    "Năng lực lõi đã giúp doanh nghiệp chiến thắng ở thị trường nội địa có thực sự phù hợp với bối cảnh pháp lý và văn hóa mới?",
+                    "Chúng ta đã thiết lập được ban kiểm soát và quản trị rủi ro đủ mạnh để vận hành hệ sinh thái đa quốc gia?",
+                    "Làm sao mở rộng quy mô toàn cầu mà không đánh đổi tính bền vững tài chính và bản sắc cốt lõi của doanh nghiệp?"
+                ]
+            }
+        };
+
+        // Switch Stage view
+        function switchStage(stageNum) {
+            // Update tabs UI
+            document.querySelectorAll('.stage-tab').forEach(btn => {
+                btn.className = "stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none text-slate-600 hover:text-slate-900";
+            });
+            const activeBtn = document.getElementById(`btn-stage-${stageNum}`);
+            activeBtn.className = "stage-tab py-2.5 sm:py-3 px-1 rounded-lg text-xs font-bold transition-all text-center focus:outline-none bg-amber-500/10 text-amber-800 border border-amber-500/25";
+
+            // Render stage content dynamically
+            const data = stagesData[stageNum];
+            let questionsHtml = '';
+            data.questions.forEach((q, idx) => {
+                questionsHtml += `
+                    <li class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                        <span class="text-amber-600 font-bold shrink-0">?</span>
+                        <span>${q}</span>
+                    </li>
+                `;
+            });
+
+            const contentHtml = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slate-800">${data.title}</h3>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed"><strong>Bối cảnh thực tế:</strong> ${data.context}</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-amber-500/5 border border-amber-500/10 rounded-2xl">
+                                <span class="block text-xs font-bold text-amber-900 uppercase tracking-wide mb-1">Chẩn đoán Nỗi đau & Triệu chứng</span>
+                                <p class="text-xs text-slate-600 leading-relaxed">${data.pain}</p>
+                            </div>
+                            <div class="p-4 bg-amber-5 border border-amber-200/40 rounded-2xl">
+                                <span class="block text-xs font-bold text-amber-950 uppercase tracking-wide mb-1">Giải pháp Quản trị Tài chính</span>
+                                <p class="text-xs text-slate-600 leading-relaxed">${data.finance}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="p-4 bg-stone-100/80 border border-amber-200/20 rounded-2xl">
+                            <span class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">Giải pháp Công nghệ & Dữ liệu</span>
+                            <p class="text-xs text-slate-600 leading-relaxed">${data.tech}</p>
+                        </div>
+                        <div class="p-5 bg-white border border-amber-200/50 rounded-2xl shadow-sm">
+                            <span class="block text-xs font-bold text-amber-800 uppercase tracking-wide mb-3">3 Câu hỏi Sát sườn cho CEO</span>
+                            <ul class="space-y-2.5">
+                                ${questionsHtml}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('stage-content-box').innerHTML = contentHtml;
+        }
+
+        // Switch Case study Tabs
+        function switchCaseTab(tabNum) {
+            // Update tabs UI
+            document.querySelectorAll('.case-tab').forEach(btn => {
+                btn.className = "case-tab px-4 py-2 text-xs font-bold rounded-lg border border-transparent text-slate-500 hover:text-amber-800 transition-all";
+            });
+            const activeBtn = document.getElementById(`btn-case-${tabNum}`);
+            activeBtn.className = "case-tab px-4 py-2 text-xs font-bold rounded-lg border border-amber-500/20 bg-amber-500/10 text-amber-800 transition-all";
+
+            // Hide all panels
+            document.querySelectorAll('.case-panel').forEach(panel => {
+                panel.classList.add('hidden');
+                panel.classList.remove('block');
+            });
+            // Show active panel
+            const activePanel = document.getElementById(`case-panel-${tabNum}`);
+            activePanel.classList.remove('hidden');
+            activePanel.classList.add('block');
+        }
+
+        // Run Interactive AI-First Simulator
+        function runAISimulator() {
+            const currentStaff = parseInt(document.getElementById('sim-staff').value) || 0;
+            const avgSalary = parseInt(document.getElementById('sim-salary').value) || 0;
+
+            // Calculations
+            const staffSaved = Math.round(currentStaff * 0.5);
+            const monthlySalarySaved = staffSaved * avgSalary;
+            const annualSalarySaved = monthlySalarySaved * 12;
+
+            // AI infrastructure standard costs based on headcount scale (estimates matching the case study rules)
+            const aiMonthlyCost = Math.round((currentStaff * 0.1) * 4000000); 
+            const annualAICost = aiMonthlyCost * 12;
+
+            const netSavings = annualSalarySaved - annualAICost;
+
+            // Formats
+            document.getElementById('sim-staff-saved').innerText = `${staffSaved} nhân sự`;
+            document.getElementById('sim-money-saved').innerText = formatVNDToBillion(annualSalarySaved);
+            document.getElementById('sim-ai-cost').innerText = formatVNDToBillion(annualAICost);
+            document.getElementById('sim-net-profit').innerText = (netSavings >= 0 ? '+' : '') + formatVNDToBillion(netSavings) + ' VND / năm';
+        }
+
+        function formatVNDToBillion(amount) {
+            if (Math.abs(amount) >= 1000000000) {
+                return (amount / 1000000000).toFixed(1) + ' tỷ';
+            } else if (Math.abs(amount) >= 1000000) {
+                return (amount / 1000000).toFixed(0) + ' triệu';
+            }
+            return amount.toLocaleString('vi-VN') + 'đ';
+        }
+
+        // Run Pricing Floor Calculator
+        function runPricingCalculator() {
+            const basePrice = parseInt(document.getElementById('base-price').value) || 0;
+
+            // Set prices
+            document.getElementById('price-t5').innerText = basePrice.toLocaleString('vi-VN') + 'đ';
+            document.getElementById('price-t4').innerText = Math.round(basePrice * 0.85).toLocaleString('vi-VN') + 'đ';
+            document.getElementById('price-t3').innerText = Math.round(basePrice * 0.70).toLocaleString('vi-VN') + 'đ';
+            document.getElementById('price-t2').innerText = Math.round(basePrice * 0.60).toLocaleString('vi-VN') + 'đ';
+            document.getElementById('price-t1').innerText = Math.round(basePrice * 0.50).toLocaleString('vi-VN') + 'đ';
+        }
+
+        // Update SME JTBD Progress
+        function updateJTBDProgress() {
+            const items = document.querySelectorAll('.jtbd-item');
+            let checkedCount = 0;
+            items.forEach(item => {
+                if (item.checked) checkedCount++;
+            });
+
+            const percentage = Math.round((checkedCount / items.length) * 100);
+            
+            // UI updates
+            document.getElementById('jtbd-percent').innerText = `${percentage}%`;
+            document.getElementById('jtbd-progress-bar').style.width = `${percentage}%`;
+        }
+
+        // On Load Initialization
+        window.onload = function() {
+            // Initial render of Stage 1
+            switchStage(1);
+            // Run interactive components
+            runAISimulator();
+            runPricingCalculator();
+            updateJTBDProgress();
+        };
+    </script>
 </body>
 </html>
