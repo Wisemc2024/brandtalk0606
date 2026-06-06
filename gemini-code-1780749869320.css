@@ -1,0 +1,72 @@
+/* * BRAND TALK #10 - STYLING CUSTOM SHEET
+ * Lưu ý: Tailwind CSS xử lý phần lớn layout, file này bổ sung các animation mượt mà cho GitHub Pages
+ */
+
+/* Animation mượt mà khi đổi nội dung giữa các tab dữ liệu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Định hình giao diện khối kính trong suốt cao cấp phản chiếu màu Vàng kim nhạt */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    box-shadow: 0 10px 35px -5px rgba(154, 123, 54, 0.04);
+}
+
+/* Hiệu ứng trỏ chuột cao cấp cho các thẻ thông tin nút bấm */
+.gold-glow {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-glow:hover {
+    border-color: rgba(212, 175, 55, 0.45) !important;
+    box-shadow: 0 12px 25px -8px rgba(212, 175, 55, 0.2) !important;
+    transform: translateY(-2px);
+}
+
+/* Chỉnh sửa giao diện mặc định cho các ô check-box của Checklist */
+.jtbd-item {
+    appearance: none;
+    background-color: #ffffff;
+    margin: 0;
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 2px solid rgba(212, 175, 55, 0.4);
+    border-radius: 0.25rem;
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.jtbd-item:checked {
+    background-color: #amber-600;
+    background: linear-gradient(135deg, #d4af37, #b89047);
+    border-color: #b89047;
+}
+
+.jtbd-item::before {
+    content: "✓";
+    transform: scale(0);
+    transition: 0.12s transform ease-in-out;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 900;
+}
+
+.jtbd-item:checked::before {
+    transform: scale(1);
+}
